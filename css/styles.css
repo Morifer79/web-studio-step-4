@@ -183,6 +183,17 @@ img{
 	flex-basis: calc((100% - 72px) / 4);
 	min-width: 250px;
 }
+.advantages-img{
+	height: 112px;
+	width: 264px;
+	padding: 24px 100px;
+
+	background-color: var(--light);
+}
+.advantages-icon{
+	height: 64px;
+	width: 64px;
+}
 .title {
 	margin-bottom: 72px;
 
@@ -198,8 +209,6 @@ img{
 	font-weight: 500;
 	line-height: 1.2;
 	color: var(--dark);
-}
-.work-section {
 }
 .work-list {
 	display: flex;
@@ -238,6 +247,55 @@ img{
 .info-card{
 	padding: 32px 16px;
 	text-align: center;
+}
+.text-card{
+	margin-bottom: 8px;
+}
+.social-list{
+	list-style: none;
+	display: flex;
+	gap: 24px;
+}
+.social-item{
+	flex-basis: calc((100% - 72px) / 4);
+}
+.social-link{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--primary-brand);
+}
+.social-link:hover{
+	background-color: var(--pressed-state);
+}
+.social-img{
+	width: 16px;
+	height: 16px;
+	margin: 12px;
+}
+.customers-list{
+	list-style: none;
+	display: flex;
+	gap: 24px;
+}
+.customer-item{
+	flex-basis: calc((100% - 120px) / 6);
+}
+.customer-link{
+	display: block;
+	width: 168px;
+	height: 88px;
+	border: 1px solid #8E8F99;
+	border-radius: 4px;
+}
+.customer-img{
+	width: 104px;
+	height: 56px;
+	margin: 16px 32px;
+}
+/* .customer-link:hover{
+	color: var(--pressed-state); */
 }
 /* !============================PORTFOLIO================================= */
 .portfolio-card{
