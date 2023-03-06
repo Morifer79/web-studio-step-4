@@ -109,7 +109,15 @@ img{
 .hero {
 	padding-top: 188px;
 	padding-bottom: 186px;
-	background-color: var(--dark);
+
+}
+.overlay{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #2E2F42B2;
+	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
 }
 .hero-title {
