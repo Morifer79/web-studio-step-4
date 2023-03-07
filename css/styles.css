@@ -6,6 +6,7 @@
 	--text: #434455;
 	--light: #F4F4FD;
 	--accent: #E7E9FC;
+	--light-slate: #8E8F99;
 }
 h1,
 h2,
@@ -257,16 +258,17 @@ img{
 	gap: 24px;
 }
 .social-item{
-	flex-basis: calc((100% - 72px) / 4);
 }
 .social-link{
 	display: block;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+}
+.light{
 	background-color: var(--primary-brand);
 }
-.social-link:hover{
+.light:hover{
 	background-color: var(--pressed-state);
 }
 .social-img{
@@ -286,17 +288,21 @@ img{
 	display: block;
 	width: 168px;
 	height: 88px;
-	border: 1px solid #8E8F99;
+	border: 1px solid var(--light-slate);
 	border-radius: 4px;
+}
+.customer-link:hover{
+	border: 1px solid var(--pressed-state);
 }
 .customer-img{
 	width: 104px;
 	height: 56px;
 	margin: 16px 32px;
+	fill: var(--light-slate);
 }
-/* .customer-link:hover{
-	color: var(--pressed-state);
-} */
+.customer-img:hover{
+	fill: var(--pressed-state);
+}
 /* !============================PORTFOLIO================================= */
 .portfolio-card{
 	border: 1px solid var(--accent);
@@ -330,9 +336,30 @@ img{
 	color: var(--accent);
 	background-color: var(--dark);
 }
-.footer-text{
-	max-width: 264px;
-}
 .logo-footer{
+	display: block;
 	color: var(--light);
+	margin-bottom: 16px;
+}
+.footer-text{
+}
+.advertising{
+	max-width: 264px;
+	margin-right: 120px;
+}
+.social-media{
+	display: inline-block;
+}
+.social-media>.footer-text{
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.social-media>.social-list{
+	gap: 16px;
+}
+.dark{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.dark:hover{
+	background-color: #31D0AA;;
 }
