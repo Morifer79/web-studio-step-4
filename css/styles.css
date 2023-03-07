@@ -40,7 +40,7 @@ img{
 .section{
 	padding: 120px 0;
 }
-/* *===============================HEADER=============================== */
+/* !===============================HEADER=============================== */
 .header {
 	padding: 24px 0;
 	border-bottom: .5px solid var(--accent);
@@ -59,7 +59,7 @@ img{
 .logo-span{
 	color: var(--primary-brand);
 }
-/* ===========================NAVIGATION================================ */
+/* *===========================NAVIGATION================================ */
 .navigation{
 	display: flex;
 	align-items: center;
@@ -85,7 +85,7 @@ img{
 .current{
 	color: var(--pressed-state);
 }
-/* ==============================ADDRESS================================ */
+/* *==============================ADDRESS================================ */
 .contact{
 	margin-left: auto;
 }
@@ -106,7 +106,8 @@ img{
 .contact-link:focus{
 	color: var(--pressed-state);
 }
-/* *============================MAIN==================================== */
+/* !============================MAIN==================================== */
+/* *===================HERO============================= */
 .hero {
 	padding-top: 188px;
 	padding-bottom: 186px;
@@ -141,6 +142,7 @@ img{
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+/* ===========================ALL BUTTONS============================= */
 .button {
 	font-family: 'Roboto';
 	font-weight: 500;
@@ -156,6 +158,7 @@ img{
 .button:focus {
 	background-color: var(--pressed-state);
 	color: var(--primary-clr);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-dark {
 	background-color: var(--primary-brand);
@@ -170,6 +173,8 @@ img{
 	color: var(--primary-brand);
 	border: 1px solid var(--accent);
 }
+/* *============================BODY SECTIONS=================================== */
+/* =================ADVANTAGES SECTION=============== */
 .advantages {
 	padding-bottom: 0;
 }
@@ -211,6 +216,7 @@ img{
 	line-height: 1.2;
 	color: var(--dark);
 }
+/* =====================WORK SECTION=================== */
 .work-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -225,6 +231,7 @@ img{
 .work-pic{
 	border: 1px solid var(--accent);
 }
+/* =======================TEAM SECTION================== */
 .team-section {
 	background-color: var(--light);
 }
@@ -253,16 +260,17 @@ img{
 	margin-bottom: 8px;
 }
 .social-list{
-	list-style: none;
 	display: flex;
 	gap: 24px;
-}
-.social-item{
+
+	list-style: none;
+
 }
 .social-link{
 	display: block;
 	width: 40px;
 	height: 40px;
+
 	border-radius: 50%;
 }
 .light{
@@ -276,8 +284,10 @@ img{
 	height: 16px;
 	margin: 12px;
 }
+/* ======================CUSTOMERS SECTION======================== */
 .customers-list{
 	list-style: none;
+
 	display: flex;
 	gap: 24px;
 }
@@ -288,6 +298,7 @@ img{
 	display: block;
 	width: 168px;
 	height: 88px;
+
 	border: 1px solid var(--light-slate);
 	border-radius: 4px;
 }
@@ -297,18 +308,23 @@ img{
 .customer-img{
 	width: 104px;
 	height: 56px;
+
 	margin: 16px 32px;
 	fill: var(--light-slate);
 }
 .customer-img:hover{
 	fill: var(--pressed-state);
 }
-/* !============================PORTFOLIO================================= */
+/* ?============================PORTFOLIO================================= */
 .portfolio-card{
 	border: 1px solid var(--accent);
 
 	flex-basis: calc((100% - 48px) / 3);
 	min-width: 350px;
+}
+.portfolio-card:hover{
+	border: 1px solid var(--light);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .filter-list {
 	display: flex;
@@ -330,18 +346,18 @@ img{
 .portfolio-info{
 	padding: 32px 16px;
 }
-/* *============================FOOTER=================================== */
+/* !============================FOOTER=================================== */
 .footer {
 	padding: 100px 0;
+
 	color: var(--accent);
 	background-color: var(--dark);
 }
 .logo-footer{
 	display: block;
+
 	color: var(--light);
 	margin-bottom: 16px;
-}
-.footer-text{
 }
 .advertising{
 	max-width: 264px;
