@@ -3,10 +3,12 @@
 	--primary-brand: #4D5AE5;
 	--pressed-state: #404BBF;
 	--dark: #2E2F42;
+	--dark-overlay: #2E2F42B2;
 	--text: #434455;
 	--light: #F4F4FD;
 	--accent: #E7E9FC;
 	--light-slate: #8E8F99;
+	--footer-hover: #31D0AA;
 }
 h1,
 h2,
@@ -116,7 +118,7 @@ img{
 .overlay{
 	max-width: 1440px;
 	margin: 0 auto;
-	background-color: #2E2F42B2;
+	background-color: var(--dark-overlay);
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -377,5 +379,5 @@ img{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 .dark:hover{
-	background-color: #31D0AA;;
+	background-color: var(--footer-hover);
 }
